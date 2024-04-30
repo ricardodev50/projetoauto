@@ -37,12 +37,12 @@ class Bot(DesktopBot):
         # activity_id = task.activity_id
 
         # Opens the BotCity website.
-        self.browse("http://soulmv/mvautenticador-cas/login?service=http%3A%2F%2Fsoulmv%3A80%2Fmv%2F")
+        self.browse("")
         
         if not self.find( "pesquisar", matching=0.97, waiting_time=10000):
             self.not_found("pesquisar")
         self.click()
-        self.paste("RICARDOMC")
+        self.paste("")
         
         if not self.find( "campo", matching=0.97, waiting_time=10000):
             self.not_found("campo")
